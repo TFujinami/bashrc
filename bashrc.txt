@@ -1,0 +1,53 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# PS1='[\u@\H \w]\$ '
+PS1='[\u] \$ '
+
+# User specific aliases and functions
+
+alias ls='ls --color=none'
+
+alias ll="pwd; ls -la;"
+alias cl="clear"
+alias fn="find ./ -name"
+
+alias vb="vim ~/.bashrc"
+alias rf="source ~/.bashrc"
+
+alias psm="ps lx"
+alias kl="kill -9"
+
+alias cpi="composer install"
+alias cpu="composer update"
+
+alias gbn="gbr | grep '\* ' | sed 's/^\* //'"
+alias gpl="gbn | xargs git pull origin"
+alias gst="git status -s"
+alias gstf="git status"
+alias gad="git add"
+alias grm="git rm"
+alias gco="git checkout"
+alias gps="gbn | xargs git push origin"
+alias gbr="git branch"
+alias grs="git reset"
+
+function grf(){ git merge $1 --no-ff; } 
+alias grf=grf
+
+alias gmd="echo '' > .gitkeep"
+alias gmb='gco -b'
+alias gmp='git commit --allow-empty -m "wip"; gps;'
+
+alias gaa="gst | grep '^.M ' | sed 's/^.M //' | xargs git add"
+
+alias gcm="gbn | xargs -IARG git log origin/ARG..HEAD"
+
+alias gbu="git fetch --prune"
+
+alias gcf="gr '<<<<'"
+alias gcf2="gr '>>>>'"

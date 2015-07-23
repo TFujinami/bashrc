@@ -1,2 +1,3 @@
-# bashrc
-bashrc
+# .bashrc
+
+This is my bash config file.
