@@ -1,14 +1,4 @@
-# .bashrc
-
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
-fi
-
-# PS1='[\u@\H \w]\$ '
-PS1='[\u] \$ '
-
-# User specific aliases and functions
+#####
 
 alias ls='ls --color=none'
 
@@ -22,8 +12,14 @@ alias rf="source ~/.bashrc"
 alias psm="ps lx"
 alias kl="kill -9"
 
-alias cpi="composer install"
+#####
+
+alias cpi="rm -fR vendor; composer install;"
 alias cpu="composer update"
+alias npi="rm -fR node_modules; npm set progress=false; npm install;"
+alias npu="npm update"
+
+#####
 
 alias gbn="gbr | grep '\* ' | sed 's/^\* //'"
 alias gpl="gbn | xargs git pull origin"
@@ -35,11 +31,12 @@ alias gco="git checkout"
 alias gps="gbn | xargs git push origin"
 alias gbr="git branch"
 alias grs="git reset"
+alias gdf="git diff"
 
 function grf(){ git merge $1 --no-ff; } 
 alias grf=grf
 
-alias gmd="echo '' > .gitkeep"
+alias gmk="echo '' > .gitkeep"
 alias gmb='gco -b'
 alias gmp='git commit --allow-empty -m "wip"; gps;'
 
@@ -48,6 +45,15 @@ alias gaa="gst | grep '^.M ' | sed 's/^.M //' | xargs git add"
 alias gcm="gbn | xargs -IARG git log origin/ARG..HEAD"
 
 alias gbu="git fetch --prune"
+alias gmd="git merge develop"
 
 alias gcf="gr '<<<<'"
 alias gcf2="gr '>>>>'"
+
+#####
+
+alias gl="npm run gulp"
+alias glw="npm run gulp watch"
+alias esln="npm run lint"
+
+#####
