@@ -5,10 +5,10 @@ alias ls='ls --color=none'
 alias ll="pwd; ls -la;"
 alias cl="clear"
 alias fn="find ./ -name"
-alias cdt="cd ~"
+alias cdh="cd ~"
 
 alias vb="vim ~/.bashrc"
-alias rf="cdt; wget https://raw.githubusercontent.com/TFujinami/bashrc/master/.bashrc_common; source ~/.bashrc;"
+alias rf="cdh; wget https://raw.githubusercontent.com/TFujinami/bashrc/master/.bashrc_common; source ~/.bashrc;"
 
 alias psm="ps lx"
 alias kl="kill -9"
