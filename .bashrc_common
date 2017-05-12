@@ -7,7 +7,7 @@ alias cl="clear"
 alias fn="find ./ -name"
 
 alias vb="vim ~/.bashrc"
-alias rf="wget https://raw.githubusercontent.com/TFujinami/bashrc/master/.bashrc_common ~/.bashrc_common; source ~/.bashrc;"
+alias rf="cd ~; rm .bashrc_common; wget https://raw.githubusercontent.com/TFujinami/bashrc/master/.bashrc_common source ~/.bashrc;"
 
 alias psm="ps lx"
 alias kl="kill -9"
