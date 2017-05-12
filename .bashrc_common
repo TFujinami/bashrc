@@ -5,10 +5,9 @@ alias ls='ls --color=none'
 alias ll="pwd; ls -la;"
 alias cl="clear"
 alias fn="find ./ -name"
-alias cdh="cd ~"
 
 alias vb="vim ~/.bashrc"
-alias rf="cdh; wget https://raw.githubusercontent.com/TFujinami/bashrc/master/.bashrc_common; source ~/.bashrc;"
+alias rf="wget https://raw.githubusercontent.com/TFujinami/bashrc/master/.bashrc_common ~/.bashrc_common; source ~/.bashrc;"
 
 alias psm="ps lx"
 alias kl="kill -9"
@@ -17,36 +16,35 @@ alias kl="kill -9"
 
 alias cpi="rm -fR vendor; composer install;"
 alias cpu="composer update"
+
 alias npi="rm -fR node_modules; npm set progress=false; npm install;"
 alias npu="npm update"
 
+alias npp="npm publish -f"
+alias npup="npm unpublish -f"
+
 #####
 
-alias gbn="gbr | grep '\* ' | sed 's/^\* //'"
-alias gpl="gbn | xargs git pull origin"
-alias gst="git status -s"
-alias gstf="git status"
-alias gad="git add"
-alias grm="git rm"
-alias gco="git checkout"
-alias gps="gbn | xargs git push origin"
+alias gbu="git fetch --prune"
 alias gbr="git branch"
-alias grs="git reset"
+alias gco="git checkout"
+alias gst="git status -s"
 alias gdf="git diff"
 
-function grf(){ git merge $1 --no-ff; } 
-alias grf=grf
+alias gmr="git merge"
+alias gcm="git commit -m"
 
-alias gmk="echo '' > .gitkeep"
-alias gmb='gco -b'
-alias gmp='git commit --allow-empty -m "wip"; gps;'
+alias gpl="gbn | xargs git pull origin"
+alias gps="gbn | xargs git push origin"
 
+alias gad="git add"
 alias gaa="gst | grep '^.M ' | sed 's/^.M //' | xargs git add"
 
-alias gcm="gbn | xargs -IARG git log origin/ARG..HEAD"
+alias grm="git rm"
+alias grs="git reset"
 
-alias gbu="git fetch --prune"
-alias gmd="git merge develop"
+alias gmb='gco -b'
+alias gmp='git commit --allow-empty -m "wip"; gps;'
 
 alias gcf="gr '<<<<'"
 alias gcf2="gr '>>>>'"
