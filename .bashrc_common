@@ -21,7 +21,9 @@ alias npi="rm -fR node_modules; npm set progress=false; npm install;"
 alias npu="npm update"
 
 alias npp="npm publish -f"
-alias npup="npm unpublish -f"
+alias npup="npm unpublish @"
+
+alias npc="npm cache clear; npm cache ls;"
 
 #####
 
