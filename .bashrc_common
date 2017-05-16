@@ -21,9 +21,10 @@ alias npi="rm -fR node_modules; npm set progress=false; npm install;"
 alias npu="npm update"
 
 alias npp="npm publish -f"
-alias npup="npm unpublish @"
+alias npup="npm unpublish"
 
 alias npc="npm cache clear; npm cache ls;"
+alias nps="npm shrinkwrap"
 
 #####
 
@@ -45,6 +46,7 @@ alias gaa="gst | grep '^.M ' | sed 's/^.M //' | xargs git add"
 
 alias grm="git rm"
 alias grs="git reset"
+alias grv="git revert"
 
 alias gmb='gco -b'
 alias gmp='git commit --allow-empty -m "wip"; gps;'
