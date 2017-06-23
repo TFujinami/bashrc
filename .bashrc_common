@@ -58,7 +58,9 @@ alias gcf2="gr '>>>>'"
 #####
 
 alias gl="npm run gulp"
+alias glp="npm run gulp --production"
 alias glw="npm run gulp watch"
+
 alias esln="npm run lint"
 
 #####
