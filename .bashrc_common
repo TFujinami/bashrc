@@ -18,7 +18,9 @@ alias kl="kill -9"
 alias cpi="rm -fR vendor; composer install;"
 alias cpu="composer update"
 
-alias npi="rm -fR node_modules; npm set progress=false; npm install;"
+# alias npi="rm -fR node_modules; npm set progress=false; npm install;"
+alias rmn="rm -fR node_modules"
+alias npi="npm install"
 alias npu="npm update"
 
 alias npp="npm publish -f"
