@@ -23,7 +23,7 @@ alias rmn="rm -fR node_modules"
 alias npi="npm install"
 alias npu="npm update"
 
-alias npp="npm publish -f"
+alias nppf="npm publish -f"
 alias npup="npm unpublish"
 
 alias npc="npm cache clear; npm cache ls;"
@@ -63,6 +63,6 @@ alias gl="npm run gulp"
 alias glp="npm run gulp --production"
 alias glw="npm run gulp watch"
 
-alias esln="npm run lint"
+alias esl="npm run lint"
 
 #####
