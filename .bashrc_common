@@ -19,14 +19,14 @@ alias cpi="rm -fR vendor; composer install;"
 alias cpu="composer update"
 
 # alias npi="rm -fR node_modules; npm set progress=false; npm install;"
-alias rmn="rm -fR node_modules"
+alias rmn="rm -fR node_modules ~/.npm"
 alias npi="npm install"
 alias npu="npm update"
 
 alias nppf="npm publish -f"
 alias npup="npm unpublish"
 
-alias npc="npm cache clear; npm cache ls;"
+# alias npc="npm cache clear; npm cache ls;"
 alias nps="npm shrinkwrap"
 
 #####
