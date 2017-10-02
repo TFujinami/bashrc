@@ -57,6 +57,11 @@ alias gmp='git commit --allow-empty -m "wip"; gps;'
 alias gcf="gr '<<<<'"
 alias gcf2="gr '>>>>'"
 
+alias gss="git stash"
+alias gsl="git stash list"
+alias gsu="git stash apply"
+alias gsr="git stash drop"
+
 #####
 
 alias gl="npm run gulp"
