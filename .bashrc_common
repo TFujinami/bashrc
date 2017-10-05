@@ -64,9 +64,12 @@ alias gsr="git stash drop"
 
 #####
 
-alias gl="npm run gulp"
-alias glp="npm run gulp --production"
-alias glw="npm run gulp watch"
+#alias gl="npm run gulp"
+#alias glp="npm run gulp --production"
+#alias glw="npm run gulp watch"
+alias gl="npx gulp"
+alias glp="npx gulp --production"
+alias glw="npx gulp watch"
 
 alias esl="npm run lint"
 
