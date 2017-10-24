@@ -51,6 +51,9 @@ alias grm="git rm"
 alias grs="git reset"
 alias grv="git revert"
 
+alias grh="git reset --hard HEAD^"
+alias gpsf="gbn | xargs git push -f origin"
+
 alias gmb='gco -b'
 alias gmp='git commit --allow-empty -m "wip"; gps;'
 
@@ -64,9 +67,9 @@ alias gsr="git stash drop"
 
 #####
 
-#alias gl="npm run gulp"
-#alias glp="npm run gulp --production"
-#alias glw="npm run gulp watch"
+# alias gl="npm run gulp"
+# alias glp="npm run gulp --production"
+# alias glw="npm run gulp watch"
 alias gl="npx gulp"
 alias glp="npx gulp --production"
 alias glw="npx gulp watch"
