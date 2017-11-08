@@ -19,7 +19,7 @@ alias cpi="rm -fR vendor; composer install;"
 alias cpu="composer update"
 
 # alias npi="rm -fR node_modules; npm set progress=false; npm install;"
-alias rmn="rm -fR node_modules ~/.npm npm-shrinkwrap.json package-lock.json"
+alias rmn="rm -fR node_modules npm-shrinkwrap.json package-lock.json; npm cache clear --force;"
 alias npi="npm install"
 alias npu="npm update"
 
