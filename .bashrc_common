@@ -74,8 +74,10 @@ alias gl="npx gulp"
 alias glp="npx gulp --production"
 alias glw="npx gulp watch"
 
-alias esl="npx run lint"
-alias csl="npx gulp csslint"
+alias esl="npm run lint"
+alias eslf="npm run lint-fix"
+alias csl="npn run csslint"
+alias cslf="npn run csslint-fix"
 
 
 #####
