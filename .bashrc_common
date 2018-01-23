@@ -27,7 +27,7 @@ alias nppf="npm publish -f"
 alias npup="npm unpublish"
 
 # alias npc="npm cache clear; npm cache ls;"
-alias nps="npm shrinkwrap"
+alias nps="npm shrinkwrap --dev"
 
 #####
 
