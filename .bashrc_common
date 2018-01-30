@@ -81,7 +81,7 @@ alias cslf="npm run csslint-fix"
 
 ##### https://qiita.com/sosuke/items/06b64068155ae4f8a853
 
-_gco()
+_git_brach_suggest()
 {
   LOCAL_BRANCH_LIST=""
   for line in `git branch | grep '^  ' | sed 's/^  //'`
@@ -90,6 +90,7 @@ _gco()
   done
   COMPREPLY=( $(compgen -W "$LOCAL_BRANCH_LIST" -- ${COMP_WORDS[COMP_CWORD]}) )
 }
-complete -F _gco gco
+complete -F _git_brach_suggest gco
+complete -F _git_brach_suggest gbr
 
 #####
