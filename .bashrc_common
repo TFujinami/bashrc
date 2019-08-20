@@ -27,7 +27,7 @@ alias nppf="npm publish -f"
 alias npup="npm unpublish"
 
 # alias npc="npm cache clear; npm cache ls;"
-alias nps="npm shrinkwrap --dev"
+# alias nps="npm shrinkwrap --dev"
 
 #####
 
@@ -39,6 +39,22 @@ alias gdf="git diff"
 
 alias gmr="git merge"
 alias gcm="git commit -m"
+
+function gcl(){
+  # https://qiita.com/mochidamochiko/items/cd4dd6ca5859328b8daa
+  if [ -p /dev/stdin ]; then
+    if [ "`echo $@`" == "" ]; then 
+      __str=`cat -`
+    else
+      __str=$@
+    fi
+  else
+    __str=$@
+  fi
+
+  git log origin/${__str}..${__str}
+}
+alias gcl="gbn | gcl"
 
 alias gbn="gbr | grep '\* ' | sed 's/^\* //'"
 alias gpl="gbn | xargs git pull origin"
