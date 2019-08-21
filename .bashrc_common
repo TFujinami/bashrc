@@ -81,6 +81,8 @@ alias gsl="git stash list"
 alias gsu="git stash apply"
 alias gsr="git stash drop"
 
+alias gclr="git clean -df ."
+
 #####
 
 # alias gl="npm run gulp"
