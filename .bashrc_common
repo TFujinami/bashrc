@@ -76,10 +76,11 @@ alias gmp='git commit --allow-empty -m "wip"; gps;'
 alias gcf="gr '<<<<'"
 alias gcf2="gr '>>>>'"
 
-alias gss="git stash"
+alias gss="git stash save"
 alias gsl="git stash list"
-alias gsu="git stash apply"
-alias gsr="git stash drop"
+alias gsu="git stash apply" #use
+alias gsr="git stash drop" #remove
+alias gsc="git stash clear"
 
 alias gclr="git clean -df ."
 
