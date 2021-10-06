@@ -82,6 +82,10 @@ alias gsu="git stash apply" #use
 alias gsr="git stash drop" #remove
 alias gsc="git stash clear"
 
+alias gsb="git submodule"
+alias gsbu="git submodule update"
+alias gsbf="git submodule foreach git pull origin master"
+
 alias gclr="git clean -df ."
 
 #####
