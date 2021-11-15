@@ -37,6 +37,7 @@ alias gco="git checkout"
 alias gst="git status -s"
 alias gdf="git diff"
 
+alias gcp="git cherry-pick"
 alias gmr="git merge"
 alias gcm="git commit -m"
 
@@ -54,7 +55,7 @@ function gcl(){
 
   git log origin/${__str}..${__str}
 }
-alias gcl="gbn | gcl"
+alias glg="gbn | gcl"
 
 alias gbn="gbr | grep '\* ' | sed 's/^\* //'"
 alias gpl="gbn | xargs git pull origin"
@@ -73,8 +74,8 @@ alias gpsf="gbn | xargs git push -f origin"
 alias gmb='gco -b'
 alias gmp='git commit --allow-empty -m "wip"; gps;'
 
-alias gcf="gr '<<<<'"
-alias gcf2="gr '>>>>'"
+# alias gcf="gr '<<<<'"
+# alias gcf2="gr '>>>>'"
 
 alias gss="git stash save"
 alias gsl="git stash list"
@@ -86,7 +87,7 @@ alias gsb="git submodule"
 alias gsbu="git submodule update"
 alias gsbf="git submodule foreach git pull origin master"
 
-alias gclr="git clean -df ."
+alias gcl="git clean -df ."
 
 #####
 
