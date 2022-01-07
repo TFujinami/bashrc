@@ -41,7 +41,7 @@ alias gcp="git cherry-pick"
 alias gmr="git merge"
 alias gcm="git commit -m"
 
-function gcl(){
+function gclf(){
   # https://qiita.com/mochidamochiko/items/cd4dd6ca5859328b8daa
   if [ -p /dev/stdin ]; then
     if [ "`echo $@`" == "" ]; then 
@@ -55,7 +55,7 @@ function gcl(){
 
   git log origin/${__str}..${__str}
 }
-alias glg="gbn | gcl"
+alias gcl="gbn | gclf"
 
 alias gbn="gbr | grep '\* ' | sed 's/^\* //'"
 alias gpl="gbn | xargs git pull origin"
@@ -87,7 +87,7 @@ alias gsb="git submodule"
 alias gsbu="git submodule update"
 alias gsbf="git submodule foreach git pull origin master"
 
-alias gcl="git clean -df ."
+alias gcr="git clean -df ."
 
 #####
 
