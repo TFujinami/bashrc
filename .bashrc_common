@@ -13,6 +13,8 @@ alias rf="rm ~/.bashrc_common; cd ~; wget --no-cache --no-check-certificate http
 alias psm="ps lx"
 alias kl="kill -9"
 
+alias hl="ssh -T git@github.com"
+
 #####
 
 alias cpi="rm -fR vendor; composer install;"
