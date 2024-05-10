@@ -119,4 +119,23 @@ _git_brach_suggest()
 complete -F _git_brach_suggest gco
 complete -F _git_brach_suggest gbr
 
+##### Docker
+
+function dkr(){
+  if [[ `pwd` =~ \/home\/(.*?)\/dev\/(.*?) ]]; then
+    user=${BASH_REMATCH[1]}
+    path=${BASH_REMATCH[2]}
+    dev=${path%%/*}
+    # %%/* --> https://qiita.com/aosho235/items/c36568830a8d47288284
+    docker compose -p ${user}-${dev} $@
+    # $@ --> https://blog.n-hassy.info/2021/05/shell-script-all-args/#google_vignette
+  else
+    echo "no dev"
+  fi
+}
+function dkrs(){
+  dkr run --rm $@ sh
+}
+alias dk="docker"
+
 #####
