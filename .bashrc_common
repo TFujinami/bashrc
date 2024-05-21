@@ -138,4 +138,8 @@ function dkrs(){
 }
 alias dk="docker"
 
+##### VSCode
+
+alias vsc="pkill -f vscode; pkill -f node; pkill -f sleep; rm -fR ~/.vscode-server;"
+
 #####
